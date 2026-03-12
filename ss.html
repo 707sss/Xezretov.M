@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Profile</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    
+    /* ORQA FONNI SHU YERDAN O'ZGARTIRASAN */
+    background:url("https://i.pinimg.com/736x/f0/ad/29/f0ad29e7018269423d5c623d18d2ddb4.jpg") no-repeat center center/cover;
+}
+
+/* PROFIL QISMI */
+.main-profile{
+    margin-bottom:30px;
+}
+
+.main-profile img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid white;
+}
+
+.main-profile h1{
+    color:rgb(255, 255, 255);
+}
+
+.main-profile p{
+    color:rgb(255, 255, 255)
+}
+
+/* GLASS BUTTON */
+.glass-btn{
+    width:260px;
+    height:200px;
+    margin:15px;
+    border-radius:15px;
+    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,0.15);
+    border:1px solid rgba(255,255,255,0.3);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.glass-btn:hover{
+    background:rgba(255,255,255,0.25);
+    transform:scale(1.05);
+}
+
+/* TUGMA ICHIDAGI PROFIL RASMI */
+.glass-btn img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+/* TUGMA NOMI */
+.btn-title{
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* USERNAME */
+.btn-username{
+    font-size:14px;
+    opacity:0.8;
+    margin-top:5px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="main-profile">
+    <img src="m.r kk.jpg" alt="profile">
+    <h1>Xezretov.M</h1>
+    <p><b>Backend Developer • Python • PHP • JS • SQL • Django</b></p>
+</div>
+
+<!-- TELEGRAM PROFIL -->
+<a href="https://t.me/MergenXezretov" target="_blank" class="glass-btn">
+    <img src="ak.jpg">
+    <div class="btn-title">Telegram Profil</div>
+    <div class="btn-username">@MergenXezretov</div>
+</a>
+
+<!-- TELEGRAM KANAL -->
+<a href="https://t.me/xezretov" target="_blank" class="glass-btn">
+    <img src="m.r kk.jpg">
+    <div class="btn-title">Telegram Kanal</div>
+    <div class="btn-username">@xezretov</div>
+</a>
+
+</body>
+</html>
